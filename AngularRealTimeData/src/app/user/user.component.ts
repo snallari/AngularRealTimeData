@@ -1,4 +1,5 @@
 
+// import { EmployeeService } from '../employee.service';
 import {Component, OnInit} from '@angular/core';
 
 @Component({
@@ -6,9 +7,10 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css'],
-//  providers: [PostService]
+//  providers: [EmployeeService]
 })
 export class UserComponent {
+//  employeeService: EmployeeService;
   title: string;
   name: string;
   address: Address;
@@ -26,7 +28,7 @@ export class UserComponent {
     }
     this.hobbies = ['Music', 'Movies', 'Sports']
     this.showHobbies = false;
-//    this.postService.getPost().subscribe(res => this.posts = res);
+//    this.employeeService.getEmployees.subscribe(res => this.posts = res);
 
   }
 

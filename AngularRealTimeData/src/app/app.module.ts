@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
@@ -10,8 +11,10 @@ import {HerodetailsComponent} from './herodetails/herodetails.component';
 import {ListComponent} from './list/list.component';
 import {ParentComponent} from './parent/parent.component';
 import {ReactformsComponent} from './reactforms/reactforms.component';
+import {SaiComponent} from './sai/sai.component';
 import {UserComponent} from './user/user.component';
 import {RouterModule} from '@angular/router';
+import {RealdatalistComponent} from './realdatalist/realdatalist.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +23,10 @@ import {RouterModule} from '@angular/router';
     ReactformsComponent,
     HeroComponent,
     HerodetailsComponent,
-    ParentComponent, UserComponent
+    ParentComponent, UserComponent, SaiComponent, RealdatalistComponent
   ],
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot([
+    BrowserModule, HttpModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot([
       {
         path: 'forms',
         component: FormsComponent
@@ -42,6 +45,13 @@ import {RouterModule} from '@angular/router';
       }, {
         path: 'user',
         component: UserComponent
+      }, {
+        path: 'sai',
+        component: SaiComponent
+      },
+      {
+        path: 'realdatalist',
+        component: RealdatalistComponent
       }
 
 
