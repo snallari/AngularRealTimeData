@@ -82,3 +82,49 @@ java.lang.Exception: Server failed to start
 
 !ENTRY com.genuitec.eclipse.modernweb.angular2.core 4 0 2017-08-26 19:58:56.534
 !MESSAGE Unable to find server connection, registerServer must be called before buildStatus
+
+!ENTRY com.genuitec.eclipse.ui.common.platform 4 0 2017-08-26 20:00:14.961
+!MESSAGE Server failed to start
+!STACK 1
+com.genuitec.eclipse.core.GenuitecCoreException: Server failed to start
+	at com.genuitec.eclipse.modernweb.angular2.core.server.AngularCLIProjectServerLaunchConfigDelegate.launch(AngularCLIProjectServerLaunchConfigDelegate.java:199)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.genuitec.eclipse.core.ui.launching.AbstractLaunchShortcut$1.run(AbstractLaunchShortcut.java:122)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Server failed to start
+	at com.genuitec.eclipse.core.GenuitecCoreException.<init>(GenuitecCoreException.java:80)
+	at com.genuitec.eclipse.core.GenuitecCoreException.<init>(GenuitecCoreException.java:52)
+	... 6 more
+!SUBENTRY 1 com.genuitec.eclipse.modernweb.angular2.core 4 0 2017-08-26 20:00:14.962
+!MESSAGE Server failed to start
+!STACK 0
+java.lang.Exception: Server failed to start
+	at com.genuitec.eclipse.core.GenuitecCoreException.<init>(GenuitecCoreException.java:80)
+	at com.genuitec.eclipse.core.GenuitecCoreException.<init>(GenuitecCoreException.java:52)
+	at com.genuitec.eclipse.modernweb.angular2.core.server.AngularCLIProjectServerLaunchConfigDelegate.launch(AngularCLIProjectServerLaunchConfigDelegate.java:199)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.genuitec.eclipse.core.ui.launching.AbstractLaunchShortcut$1.run(AbstractLaunchShortcut.java:122)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-08-26 20:02:31.048 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-26 20:02:32.767
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-08-26 20:02:44.829
+!MESSAGE Darkest Dark detected colors from an earlier Eclipse Color Theme install that are being cleaned up to avoid workspace pollution
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-26 20:06:01.186
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-26 20:06:01.190
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time

@@ -1,0 +1,11 @@
+.lw{
+background-image: -moz-linear-gradient(left, #20B2AA, #FFFF66);
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #20B2AA), color-stop(1.0, #FFFF66));
+border: 50px solid #87CEFA;
+background-color: #32CD32;
+padding: 10px;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 12pt;
+color: #888888;
+text-align: center;
+}
